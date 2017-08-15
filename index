@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -eu
 exec_dir=$PWD
+
+echo $(dirname $(readlink -f $0))
+echo $(dirname $(greadlink -f $0))
+echo $(cd -P -- "$(dirname -- "$0")" && pwd -P)
+
 echo hello
 pwd
 bundle exec ruby app.rb
