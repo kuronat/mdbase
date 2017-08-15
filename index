@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -eu
 exec_dir=$PWD
-cd $(cd -P -- "$(dirname -- "$0")" && pwd -P)
 echo hello
 pwd
 bundle exec ruby app.rb
