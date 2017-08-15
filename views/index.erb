@@ -16,7 +16,7 @@
   <div class=fb>
     <div class=sidebar>
 
-    <% Dir["**/*md"].each do |path| %>
+    <% Dir["#{ENV["exec_dir"]}/**/*md"].each do |path| %>
       <div class=btn link="<%= path %>">
         <%= File.basename path %>
       </div>
