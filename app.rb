@@ -15,6 +15,7 @@ get '/open' do
   "ok"
 end
 
+require 'watir'
 Thread.new {
   b = Watir::Browser.start 'http://localhost:4567'
   at_exit { b.quit }
