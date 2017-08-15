@@ -17,7 +17,7 @@ end
 
 require 'watir'
 Thread.new {
-  b = Watir::Browser.start 'http://localhost:4567', args: %w{--disable-infobars}
+  b = Watir::Browser.start 'http://localhost:4567', :chrome, args: %w{--disable-infobars}
   at_exit { b.quit }
   while sleep 1
     b.status unless b.nil? rescue exit(0)
