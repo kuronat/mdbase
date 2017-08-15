@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-exec_dir=$PWD
+export exec_dir=$PWD
 
 echo $(dirname "$0")
 cd $(dirname "$0")
@@ -10,4 +10,4 @@ cd $(dirname $(readlink $0))
 echo hello
 pwd
 bundle exec ruby app.rb
-open http://localhost:4567
+
