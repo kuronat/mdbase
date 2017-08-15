@@ -1,0 +1,7 @@
+{
+  "name": "mdbase",
+  "bin": {
+    "mdbase": "index"
+  },
+  "version": "0.1.0"
+}

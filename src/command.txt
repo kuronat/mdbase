@@ -1,0 +1,2 @@
+npm install --save jquery markdown-it
+webpack ./front.js ../public/bundle.js --devtool source-map

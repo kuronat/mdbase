@@ -1,0 +1,30 @@
+
+<head>
+  <link rel="stylesheet" href="./index.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css"/>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG"></script>
+  <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+         processEscapes: true
+       }
+     });
+  </script>
+</head>
+<body>
+  <div class=fb>
+    <div class=sidebar>
+
+    <% Dir["**/*md"].each do |path| %>
+      <div class=btn link="<%= path %>">
+        <%= File.basename path %>
+      </div>
+    <% end %>
+
+    </div>
+    <div class="preview markdown-body">
+    </div>
+  </div>
+  <script src="./bundle.js"></script>
+</body>
