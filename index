@@ -1,7 +1,7 @@
 #!/usr/bin/env bash eu
 exec_dir=$PWD
 
-echo dirname $(readlink $0)
+echo $(dirname $(readlink $0))
 cd $(dirname $(readlink $0))
 
 echo hello
