@@ -2,9 +2,8 @@
 set -eu
 exec_dir=$PWD
 
-echo $(dirname $(readlink -f $0))
-echo $(dirname $(greadlink -f $0))
-echo $(cd -P -- "$(dirname -- "$0")" && pwd -P)
+echo dirname $(readlink $0)
+cd $(dirname $(readlink $0))
 
 echo hello
 pwd
