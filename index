@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -eu
 exec_dir=$PWD
 cd $(dirname $0)
 bundle exec ruby app.rb
