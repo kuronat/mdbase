@@ -3,5 +3,6 @@ set -eu
 exec_dir=$PWD
 cd $(dirname $0)
 echo hello
+pwd
 bundle exec ruby app.rb
 open http://localhost:4567
