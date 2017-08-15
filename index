@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-set -eu
+#!/usr/bin/env bash eu
 exec_dir=$PWD
 
 echo dirname $(readlink $0)
